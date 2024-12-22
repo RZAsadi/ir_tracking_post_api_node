@@ -20,10 +20,12 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
 
 if [ -d "ir_tracking_post_api_node" ]; then
     echo -e "${BLUE}Deleting existing xVpn directory...${NC}"
-    rm -rf xVpn
+    rm -rf ir_tracking_post_api_node
 fi
 
 # Clone the repository
