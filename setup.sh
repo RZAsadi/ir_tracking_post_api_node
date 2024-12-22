@@ -35,7 +35,7 @@ git clone https://github.com/RZAsadi/ir_tracking_post_api_node.git
 cd ir_tracking_post_api_node
 
 # Down the last container
-docker-compose down
+# docker-compose down
 
 # Build & Run new Container
 docker-compose up --build -d
